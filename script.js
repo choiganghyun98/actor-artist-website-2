@@ -24,14 +24,10 @@ window.addEventListener('click', (e) => {
 
   const half = window.innerWidth / 2;
 
-  if (e.clientX > half) {
-    if (current < pages.length - 1) {
-      current++;
-    }
-  } else {
-    if (current > 0) {
-      current--;
-    }
+  if (e.clientX > half && current < pages.length - 1) {
+    current++;
+  } else if (e.clientX <= half && current > 0) {
+    current--;
   }
 
   updatePages();
