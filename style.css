@@ -160,6 +160,20 @@ button{background:none;border:1px solid #111;padding:.4rem .7rem;cursor:pointer}
 
 @media(max-width:768px){
 
+   .book{
+    height: auto;
+    perspective: none;
+  }
+
+  .page{
+    position: relative;   /* ✅ absolute 제거 */
+    transform: none !important;
+    min-height: auto;
+    height: auto;
+    overflow: visible;
+    padding-bottom: 12vw;
+  }
+   
   html, body{
     width:100%;
     overflow-x:hidden;
