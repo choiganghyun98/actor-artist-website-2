@@ -1,7 +1,13 @@
 const pages = document.querySelectorAll('.page');
 let current = 0;
 
+function isMobile() {
+  return window.innerWidth <= 768;
+}
+
 function updatePages() {
+  if (isMobile()) return;
+
   pages.forEach((page, index) => {
     page.style.zIndex = pages.length - index;
 
@@ -14,22 +20,21 @@ function updatePages() {
 }
 
 window.addEventListener('click', (e) => {
+  if (isMobile()) return;
+
   const half = window.innerWidth / 2;
 
   if (e.clientX > half) {
-    // 오른쪽 클릭 → 다음
     if (current < pages.length - 1) {
       current++;
-      updatePages();
     }
   } else {
-    // 왼쪽 클릭 → 이전
     if (current > 0) {
       current--;
-      updatePages();
     }
   }
+
+  updatePages();
 });
 
-// 초기 상태
 updatePages();
