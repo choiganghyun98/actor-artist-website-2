@@ -161,7 +161,7 @@ button{background:none;border:1px solid #111;padding:.4rem .7rem;cursor:pointer}
 html,body{width:100%;height:auto;overflow-x:hidden;overflow-y:auto}
 .book{position:static;height:auto;perspective:none}
 .page{position:relative;inset:auto;transform:none;height:auto;min-height:auto;overflow:visible;padding:6vw}
-.spread{display:flex;flex-direction:column;gap:8vw;height:auto}
+.spread{display:flex;flex-direction:column;align-items:flex-start;gap:8vw;height:auto}
 .left,.right{width:100%}
 .grid{display:grid;grid-template-columns:1fr;gap:6vw}
 .page-profile .portrait-block{flex-direction:column;align-items:flex-start;gap:2rem}
@@ -169,7 +169,8 @@ html,body{width:100%;height:auto;overflow-x:hidden;overflow-y:auto}
 .three-column{display:flex;flex-direction:column;gap:10vw;height:auto}
 .column img{height:auto;max-height:none}
 .page-final{padding:0}
-.page-final .spread{gap:6vw;display:flex;flex-direction:column}
+.page-final img{box-shadow:none}
+.page-final .spread{display:flex;flex-direction:column;align-items:flex-start;gap:4vw
 .page-final .left{width:100%;margin-left:0}
 .page-final .left img{width:100%;max-height:100vh;object-fit:contain;display:block}
 .page-final .right{padding:6vw;justify-content:flex-start}
