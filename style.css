@@ -233,5 +233,12 @@ button{background:none;border:1px solid #111;padding:.4rem .7rem;cursor:pointer}
   .page-final .right{
     justify-content: flex-start;
   }
-
+   
+   .page-final .left img{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  }
+   
 }
+
