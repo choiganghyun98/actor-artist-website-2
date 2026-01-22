@@ -175,4 +175,5 @@ html,body{width:100%;height:auto;overflow-x:hidden;overflow-y:auto}
 .page-final .left img{width:100%;height:auto;object-fit:contain;display:block}
 .page-final .right{width:100%!important;max-width:none;display:block}
 .page-final .left,.page-final .right{padding:0 6vw}
+.page:last-of-type{padding-bottom:12vw}
 }
