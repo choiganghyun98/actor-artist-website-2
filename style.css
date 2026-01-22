@@ -159,52 +159,31 @@ button{background:none;border:1px solid #111;padding:.4rem .7rem;cursor:pointer}
    ===================================== */
 
 @media(max-width:768px){
-  .layout {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-  
-  .sidebar {
-    position: static;
-  }
 
-  body{
-    overflow:auto;
-  }
-
-  .book{
-    perspective:none;
-  }
-
-  .page{
-    position:relative;
-    height:auto;
-    transform:none!important;
-    padding:8vw 6vw;
-    overflow:visible;
-  }
-
-  .page-profile .contact {
-    margin-left: 0;
-    margin-top: 2rem;
+  html, body{
+    width:100%;
+    overflow-x:hidden;
   }
 
   .spread{
-    height:auto;
+    flex-direction:column;
     gap:8vw;
-    flex-direction: column;
+    height:auto;
   }
 
-  .grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .left,.right{
+  .left,
+  .right{
     width:100%;
   }
 
-  .nav{
-    display:none; /* 페이지 넘김 버튼 제거 */
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  .page-profile .contact{
+    margin-left:0;
+    margin-top:2rem;
   }
 
 }
+
