@@ -158,87 +158,20 @@ button{background:none;border:1px solid #111;padding:.4rem .7rem;cursor:pointer}
    MOBILE (FINAL – CLEAN)
 ===================================== */
 
-@media (max-width: 768px){
-
-  /* 스크롤 완전 복구 */
-  html, body{
-    width: 100%;
-    height: auto;
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-
-  /* 책 구조 해제 */
-  .book{
-    position: static;
-    height: auto;
-    perspective: none;
-  }
-
-  .page{
-    position: relative;   /* absolute 완전 제거 */
-    inset: auto;
-    transform: none;
-    height: auto;
-    min-height: auto;
-    overflow: visible;
-    padding-bottom: 16vw;
-  }
-
-  /* 레이아웃 세로화 */
-  .spread{
-    display: flex;
-    flex-direction: column;
-    gap: 8vw;
-    height: auto;
-  }
-
-  .left,
-  .right{
-    width: 100%;
-  }
-
-  .grid{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 6vw;
-  }
-
-  /* PAGE 2 */
-  .page-profile .portrait-block{
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 2rem;
-  }
-
-  .page-profile .contact{
-    margin-left: 0;
-    margin-top: 0;
-  }
-
-  /* PAGE 3 */
-  .three-column{
-    display: flex;
-    flex-direction: column;
-    gap: 10vw;
-    height: auto;
-  }
-
-  .column img{
-    height: auto;
-    max-height: none;
-  }
-
-  /* PAGE 4 */
-  .page-final .right{
-    justify-content: flex-start;
-  }
-   
-   .page-final .left img{
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  }
-   
+@media (max-width:768px){
+html,body{width:100%;height:auto;overflow-x:hidden;overflow-y:auto}
+.book{position:static;height:auto;perspective:none}
+.page{position:relative;inset:auto;transform:none;height:auto;min-height:auto;overflow:visible;padding:6vw;padding-bottom:16vw}
+.spread{display:flex;flex-direction:column;gap:8vw;height:auto}
+.left,.right{width:100%}
+.grid{display:grid;grid-template-columns:1fr;gap:6vw}
+.page-profile .portrait-block{flex-direction:column;align-items:flex-start;gap:2rem}
+.page-profile .contact{margin-left:0;margin-top:0}
+.three-column{display:flex;flex-direction:column;gap:10vw;height:auto}
+.column img{height:auto;max-height:none}
+.page-final{padding:0}
+.page-final .spread{gap:6vw;display:flex;flex-direction:column}
+.page-final .left{width:100vw;margin-left:calc(-1 * 6vw)}
+.page-final .left img{width:100%;height:100vh;object-fit:cover;display:block}
+.page-final .right{padding:6vw;justify-content:flex-start}
 }
-
